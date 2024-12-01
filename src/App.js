@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import Contador from './components/Contador';
+import Seccion from './components/Seccion';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App min-h-screen bg-gray-200 flex flex-col items-center p-4">
+      <Seccion
+        titulo="Bienvenido a la aplicación del Contador"
+        descripcion="Esta aplicación te permite incrementar y restablecer un contador."
+      />
+      <Contador />
     </div>
   );
 }
